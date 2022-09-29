@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    background-color: #943d8a;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+.card img {
+    height: 10rem;
+    border: 2px solid #000;
+}
+.card p {
+    margin-top: .3rem;
+}
+.card a {
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 3rem;
+    width: 9rem;
+    text-align: center;
+    padding: .4rem;
+    transition: .3s;
+    color: #63203d;
+    border: 1px solid #fff;
+}
+.card a:hover {
+    background-color: transparent;
+}
