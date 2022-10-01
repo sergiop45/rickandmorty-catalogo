@@ -1,0 +1,19 @@
+.personagem {
+    display: flex;
+    justify-content: center;
+}
+.personagem .card {
+    background-color: #000;
+    color: #943d8a;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 2rem 4rem;
+}
+.personagem .card img {
+    height: 50%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+.personagem .card p {
+    margin-bottom: 1rem;
+}

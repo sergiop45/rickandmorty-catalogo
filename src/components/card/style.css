@@ -24,7 +24,9 @@
     transition: .3s;
     color: #63203d;
     border: 1px solid #fff;
+    margin-top: 1rem;
 }
 .card a:hover {
-    background-color: transparent;
+    background-color: #943d8a;
+    color: #fff;
 }

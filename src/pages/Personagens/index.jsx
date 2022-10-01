@@ -36,9 +36,8 @@ const Personagens = () => {
                 return (
                   <div>
                   <Card urlImage={person.image} 
-                        personName={person.name} 
-                        personStatus={person.status}
-                        personLink={"/personagen/"+ person.id}
+                        personName={person.name}
+                        personLink={"/personagens/"+ person.id}
                   />
                 
                   </div>
