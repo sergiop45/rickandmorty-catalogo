@@ -8,6 +8,7 @@
     font-weight: bold;
     font-size: 25px;
     padding: 2rem 4rem;
+    width: 500px;
 }
 .episode .card img {
     height: 50%;
