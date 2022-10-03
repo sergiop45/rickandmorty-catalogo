@@ -28,7 +28,7 @@ const Personagem = () => {
     
     
   return (
-    <div class='personagem'>
+    <div className='personagem'>
         
         <Card urlImage={character.image} 
                         personName={character.name} 
@@ -37,6 +37,7 @@ const Personagem = () => {
                         personLocation={character.location}
                         personOrigin={character.origin}
                         personGender={character.gender}
+                        dados={false}
                   />
     </div>
   )

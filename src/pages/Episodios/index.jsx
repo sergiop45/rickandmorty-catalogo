@@ -12,7 +12,6 @@ const Episodios = () => {
       .then((res) => res.json())
       .then((data) => {
         setEpisode(data.results);
-        console.log(data.results)
       }).catch((err) => alert(err))
     }
 
@@ -35,7 +34,7 @@ const Episodios = () => {
                   <div key={epi.id}>
                   <Card episodio={epi.episode} 
                         personName={epi.name}
-                        personLink={"/personagens/"+ epi.id}
+                        personLink={"/episodios/"+ epi.id}
                   />
                 
                   </div>

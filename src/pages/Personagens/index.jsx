@@ -33,7 +33,7 @@ const Personagens = () => {
               
               character.map((person) => {
                 return (
-                  <div>
+                  <div key={person.id}>
                   <Card urlImage={person.image} 
                         personName={person.name}
                         personLink={"/personagens/"+ person.id}

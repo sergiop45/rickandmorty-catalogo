@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Personagens from './pages/Personagens'
 import Personagem from './pages/Personagem'
 import Episodios from './pages/Episodios'
+import Episodio from './pages/Episodio'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path='/personagens' element={<Personagens />} />
           <Route path='/personagens/:id' element={<Personagem />} />
           <Route path='/episodios' element={<Episodios />} />
+          <Route path='/episodios/:id' element={<Episodio />} />
 
 
         </Route>

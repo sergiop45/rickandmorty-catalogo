@@ -1,0 +1,19 @@
+.episode {
+    display: flex;
+    justify-content: center;
+}
+.episode .card {
+    background-color: #000;
+    color: #943d8a;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 2rem 4rem;
+}
+.episode .card img {
+    height: 50%;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+.episode .card p {
+    margin-bottom: 1rem;
+}

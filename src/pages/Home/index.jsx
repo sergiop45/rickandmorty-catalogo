@@ -20,7 +20,6 @@ function Home() {
       <button onClick={() => getCharacters()}>buscar</button>
 
       <div className='container'>
-        {console.log(character)}
           
           {
             

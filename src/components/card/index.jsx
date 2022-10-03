@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 
-const Card = ({urlImage, personName, episodio, personGender, personLocation, personOrigin, personStatus, personSpecie, personLink}) => {
+const Card = ({dados,urlImage, personName, episodio, personGender, personLocation, personOrigin, personStatus, personSpecie, personLink}) => {
   return (
     <div className='card'>
         {urlImage ? <img src={urlImage} alt="character" /> : console.log()}
@@ -15,6 +15,15 @@ const Card = ({urlImage, personName, episodio, personGender, personLocation, per
         {personOrigin ? <p>Origin: {personOrigin.name}</p>: console.log()}
         {personLocation ? <p>Location: {personLocation.name}</p>: console.log()}
         {personLink ? <Link to={personLink}>Ver Mais</Link>: console.log()}
+        {dados ? 
+            <div className='card-episode'>
+              <h2>Dados do Episodio</h2>
+              <p>Nome: {dados.name}</p>
+              <p>Data de estréia: {dados.air_date}</p>
+              <p>Episodio: {dados.episode}</p>
+  
+            </div>
+        : console.log()}
         
     </div>
   )
