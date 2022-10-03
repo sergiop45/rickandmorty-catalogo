@@ -26,7 +26,6 @@ const Personagens = () => {
         
   
         <div className='container'>
-          {console.log(character)}
             
             {
               

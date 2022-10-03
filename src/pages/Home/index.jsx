@@ -32,7 +32,7 @@ function Home() {
                 <Card urlImage={person.image} 
                       personName={person.name} 
                       personStatus={person.status}
-                      personLink={"/personagen/"+ person.id}
+                      personLink={"/personagens/"+ person.id}
                 />
               
                 </div>
