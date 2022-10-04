@@ -3,6 +3,7 @@ import Navbar from './components/navbar'
 import { useState } from 'react'
 import Card from './components/card';
 import {Outlet} from 'react-router-dom'
+import Footer from './components/footer';
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
      <Navbar />
      <Outlet />
+     <Footer />
     </div>
   )
 }

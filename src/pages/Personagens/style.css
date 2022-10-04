@@ -1,9 +1,7 @@
-.container {
+.personagens .container  {
     display: flex;
     flex-wrap: wrap;
     margin: 2em;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 3rem;
 }
-

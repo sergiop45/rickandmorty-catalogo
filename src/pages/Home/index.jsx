@@ -1,48 +1,24 @@
 import './style.css';
-import { useState } from 'react';
-import Card from '../../components/card';
+import home from '../../../public/img/home.jpg'
 
 function Home() {
-  const [character, setCharacter] = useState([]);
-
-  const getCharacters = async () => {
-    let url = "https://rickandmortyapi.com/api/character";
-    await fetch(url)
-    .then((res) => res.json())
-    .then((data) => {
-      setCharacter(data.results);
-    }).catch((err) => alert(err))
-  }
+  
 
   return (
-    <div className="Home">
-      
-      <button onClick={() => getCharacters()}>buscar</button>
+    <div className='Home'>
 
       <div className='container'>
-          
-          {
-            
-            character.length > 0 ? 
-            
-            character.map((person) => {
-              return (
-                <div>
-                <Card urlImage={person.image} 
-                      personName={person.name} 
-                      personStatus={person.status}
-                      personLink={"/personagens/"+ person.id}
-                />
-              
-                </div>
-              )
-            })
-            
-            
-            : console.log("sem dados")
 
-            
-          }
+          <img src={home} alt="" />
+          <div className='label'>
+          <h1>Rick and Morty</h1>
+          <p>Rick and Morty is an American adult animated 
+            science-fiction sitcom created by Justin Roiland and
+             Dan Harmon for Cartoon Network's nighttime programming 
+             block Adult Swim.  It is distributed internationally by Warner Bros. Domestic Television</p>
+          <p>The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but fretful grandson Morty Smith, who split their time between domestic life and interdimensional adventures that take place across an infinite number of realities, often travelling to other planets and
+            dimensions through portals and on Rick's flying saucer.</p>
+          </div>
       </div>
     </div>
   )

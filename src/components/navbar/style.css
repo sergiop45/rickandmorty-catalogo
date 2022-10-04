@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #793a57;
+    background-color: #000;
     padding: 1rem;
 }
 li {
@@ -14,5 +14,5 @@ li {
     transition: 1s;
 }
 .navbar li a:hover {
-    color: #69d0b3;
+    color: violet;
 }

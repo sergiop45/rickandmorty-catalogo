@@ -1,0 +1,29 @@
+.Home * {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Home .container {
+    position: relative;
+    height: 100%;
+}
+
+.Home .container img {
+    min-height: 600px;
+    width: 100%;
+}
+
+.Home .container .label {
+    position: absolute;
+    top: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    align-items: center;
+    margin: 0 3rem;
+}
+.label p {
+    margin-top: 2rem;
+}

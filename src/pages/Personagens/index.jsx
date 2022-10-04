@@ -21,7 +21,7 @@ const Personagens = () => {
     }, [])
   
     return (
-      <div className="Home">
+      <div className='personagens'>
         
         
   
